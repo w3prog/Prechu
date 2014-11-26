@@ -29,15 +29,14 @@ a{
 header{
   height: 89px;
   
-  h1 a{
+  .logo {
     display: block;
     width: 120px;
     height: 45px;
+    line-height: 45px;
     padding-left: 60px;
-    padding-top: 6px;
     background: url(../img/logo_site.png) no-repeat;
     margin-top: 24px;
-    margin-right: 45px;
     font-size: 42px;
     float: left;
   }
