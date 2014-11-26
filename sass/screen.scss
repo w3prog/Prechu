@@ -6,12 +6,12 @@
 @import "compass/reset";
 
 @font-face {
-font-family: SegoeWP; /* имя шрифта для CSS правил */
+font-family: 'SegoeWP'; /* имя шрифта для CSS правил */
 src: url(../font/SegoeWP.ttf);
 }
 
-*{
-  font-family: SegoeWP;
+body {
+  font-family: 'SegoeWP';
 }
 
 a{
