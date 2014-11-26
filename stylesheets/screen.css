@@ -221,65 +221,80 @@ header ul li a:hover {
   margin-bottom: 95px;
 }
 /* line 142, ../sass/screen.scss */
-.content article {
-  margin-right: 90px;
+.content ul.advantages {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+/* line 145, ../sass/screen.scss */
+.content ul.advantages li {
   width: 250px;
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-left: 45px;
+  margin-right: 45px;
   text-align: center;
   font: 14px;
   color: #909090;
 }
-/* line 149, ../sass/screen.scss */
-.content article a {
+/* line 153, ../sass/screen.scss */
+.content ul.advantages li img {
+  margin-bottom: 30px;
+}
+/* line 156, ../sass/screen.scss */
+.content ul.advantages li a {
   margin: 0 auto;
   color: #5094f2;
   font-size: 20px;
+  line-height: 30px;
 }
 
-/* line 156, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .basket {
   min-height: 400px;
   color: #6f7173;
 }
-/* line 159, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .basket h2 {
   font-size: 42px;
   padding-left: 55px;
 }
-/* line 163, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .basket img {
   float: left;
   margin-left: 50px;
   margin-top: 75px;
 }
-/* line 169, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .basket .basket-text {
   margin-left: 500px;
 }
-/* line 172, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .basket .basket-text h3 {
   font-size: 26px;
   padding-bottom: 35px;
 }
-/* line 177, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .basket .basket-text p {
   font-size: 15px;
   color: #909090;
   padding-bottom: 25px;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .shadow-line {
   width: 100%;
   border-bottom: 1px solid #e5e5e5;
   margin-top: 40px;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 footer {
   text-align: center;
 }
-/* line 192, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 footer p {
   margin-top: 35px;
   margin-bottom: 45px;

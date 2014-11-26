@@ -139,17 +139,26 @@ header{
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 95px;
-  article{
-    margin-right: 90px;
-    width: 250px;
-    float: left;
-    text-align: center;
-    font: 14px;
-    color: #909090;
-    a{
-      margin: 0 auto;
-      color: #5094f2;
-      font-size: 20px;
+  ul.advantages {
+    margin-left: -25px;
+    margin-right: -25px;
+    li {
+      width: 250px;
+      @include inline-block;
+      margin-left: 45px;
+      margin-right: 45px;
+      text-align: center;
+      font: 14px;
+      color: #909090;
+      img {
+        margin-bottom: 30px;
+      }
+      a{
+        margin: 0 auto;
+        color: #5094f2;
+        font-size: 20px;
+        line-height: 30px;
+      }
     }
   }
 }
