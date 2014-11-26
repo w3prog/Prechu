@@ -1,6 +1,11 @@
 {
-    "repository" :
-        { "type" : "git"
-        , "url" : "https://github.com/malas34/brackets-github-issues.git"
-    }
+  "name": "prechu",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-file-concat": "0.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malas34/brackets-github-issues.git"
+  }
 }

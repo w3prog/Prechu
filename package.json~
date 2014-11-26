@@ -1,0 +1,11 @@
+{
+	"name" : "prechu",
+	"version" : "0.1",
+	"devDependencies" : {
+		
+	},
+    "repository" :
+        { "type" : "git"
+        , "url" : "https://github.com/malas34/brackets-github-issues.git"
+    }
+}
