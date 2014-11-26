@@ -73,29 +73,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* имя шрифта для CSS правил */
   src: url(../font/SegoeWP.ttf);
 }
-/* line 13, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
 body {
   font-family: 'SegoeWP';
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 18, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: #6c6c6c;
   font-size: 20px;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
 .container {
   margin: 0 auto;
   width: 1024px;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 header {
   height: 89px;
 }
-/* line 31, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 header h1 a {
   display: block;
   width: 120px;
@@ -108,29 +108,36 @@ header h1 a {
   font-size: 42px;
   float: left;
 }
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 header ul {
-  margin-left: 600px;
-}
-/* line 45, ../sass/screen.scss */
-header ul li {
-  float: left;
+  height: 60px;
+  padding-top: 29px;
+  text-align: right;
 }
 /* line 48, ../sass/screen.scss */
+header ul li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  height: 60px;
+}
+/* line 51, ../sass/screen.scss */
 header ul li a {
   display: block;
   padding-left: 5px;
   padding-right: 5px;
-  margin-top: 50px;
-  padding-bottom: 18px;
-  margin-right: 30px;
+  margin-left: 30px;
+  height: 58px;
+  line-height: 58px;
 }
-/* line 55, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 header ul li a:hover {
   border-bottom: 2px solid #5094f2;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .banner {
   position: relative;
   background: url(../img/backgroung-banner.png);
@@ -138,17 +145,17 @@ header ul li a:hover {
   height: 480px;
   color: white;
 }
-/* line 69, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .banner .container {
   position: relative;
 }
-/* line 71, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 .banner .container img {
   margin-left: 60px;
   margin-top: 40px;
   float: left;
 }
-/* line 77, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .banner .container h2 {
   display: block;
   font-size: 42px;
@@ -156,14 +163,14 @@ header ul li a:hover {
   padding-top: 156px;
   padding-bottom: 15px;
 }
-/* line 84, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .banner .container p {
   font-size: 26px;
   line-height: 1.049;
   margin-left: 515px;
   padding-bottom: 18px;
 }
-/* line 91, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .banner .container .ok {
   display: block;
   margin-left: 525px;
@@ -176,7 +183,7 @@ header ul li a:hover {
   padding-left: 45px;
   margin-top: 12px;
 }
-/* line 104, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .banner .container .next {
   position: absolute;
   right: 0px;
@@ -187,7 +194,7 @@ header ul li a:hover {
   width: 25px;
   height: 63px;
 }
-/* line 115, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .banner .container .down {
   position: absolute;
   top: 230px;
@@ -197,7 +204,7 @@ header ul li a:hover {
   width: 25px;
   height: 63px;
 }
-/* line 125, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .banner .line {
   position: absolute;
   bottom: 0px;
@@ -206,7 +213,7 @@ header ul li a:hover {
   background: url(../img/Line.png);
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .content {
   overflow: hidden;
   margin-top: 55px;
@@ -214,7 +221,7 @@ header ul li a:hover {
   padding-right: 25px;
   margin-bottom: 95px;
 }
-/* line 140, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .content article {
   margin-right: 90px;
   width: 250px;
@@ -223,57 +230,57 @@ header ul li a:hover {
   font: 14px;
   color: #909090;
 }
-/* line 147, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .content article a {
   margin: 0 auto;
   color: #5094f2;
   font-size: 20px;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .basket {
   min-height: 400px;
   color: #6f7173;
 }
-/* line 157, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 .basket h2 {
   font-size: 42px;
   padding-left: 55px;
 }
-/* line 161, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .basket img {
   float: left;
   margin-left: 50px;
   margin-top: 75px;
 }
-/* line 167, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .basket .basket-text {
   margin-left: 500px;
 }
-/* line 170, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .basket .basket-text h3 {
   font-size: 26px;
   padding-bottom: 35px;
 }
-/* line 175, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .basket .basket-text p {
   font-size: 15px;
   color: #909090;
   padding-bottom: 25px;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .shadow-line {
   width: 100%;
   border-bottom: 1px solid #e5e5e5;
   margin-top: 40px;
 }
 
-/* line 188, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 footer {
   text-align: center;
 }
-/* line 190, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 footer p {
   margin-top: 35px;
   margin-bottom: 45px;

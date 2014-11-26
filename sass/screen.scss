@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
 
 @font-face {
 font-family: 'SegoeWP'; /* имя шрифта для CSS правил */
@@ -41,17 +42,19 @@ header{
     float: left;
   }
   ul{
-    margin-left: 600px;
+    height: 60px;
+    padding-top: 29px;
+    text-align: right;
     li{
-      float: left;
-      
+      @include inline-block;
+      height: 60px;
       a{
         display: block;
         padding-left: 5px;
         padding-right: 5px;
-        margin-top: 50px;
-        padding-bottom: 18px;
-        margin-right: 30px;
+        margin-left: 30px;
+        height: 58px;
+        line-height: 58px;
         &:hover{
           border-bottom: 2px solid #5094f2;
         }
