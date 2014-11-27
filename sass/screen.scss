@@ -68,7 +68,7 @@ header{
   background-size: cover;
   height: 480px;
   color: white;
-  .container{
+  .slide {
     position: relative;
     img{
       margin-left: 60px;
@@ -125,7 +125,7 @@ header{
       }
   }
   
-  #slide{
+  #slider {
     margin: 0 auto;
       width: 1024px;
     .owl-controls.clickable{

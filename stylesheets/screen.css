@@ -3,7 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -145,17 +145,17 @@ header ul li a:hover {
   color: white;
 }
 /* line 71, ../sass/screen.scss */
-.banner .container {
+.banner .slide {
   position: relative;
 }
 /* line 73, ../sass/screen.scss */
-.banner .container img {
+.banner .slide img {
   margin-left: 60px;
   margin-top: 40px;
   float: left;
 }
 /* line 79, ../sass/screen.scss */
-.banner .container h2 {
+.banner .slide h2 {
   display: block;
   font-size: 42px;
   margin-left: 515px;
@@ -163,14 +163,14 @@ header ul li a:hover {
   padding-bottom: 15px;
 }
 /* line 86, ../sass/screen.scss */
-.banner .container p {
+.banner .slide p {
   font-size: 26px;
   line-height: 1.049;
   margin-left: 515px;
   padding-bottom: 18px;
 }
 /* line 93, ../sass/screen.scss */
-.banner .container .ok {
+.banner .slide .ok {
   display: block;
   margin-left: 525px;
   width: 127px;
@@ -183,7 +183,7 @@ header ul li a:hover {
   margin-top: 12px;
 }
 /* line 106, ../sass/screen.scss */
-.banner .container .next {
+.banner .slide .next {
   position: absolute;
   right: 0px;
   top: 230px;
@@ -194,7 +194,7 @@ header ul li a:hover {
   height: 63px;
 }
 /* line 117, ../sass/screen.scss */
-.banner .container .down {
+.banner .slide .down {
   position: absolute;
   top: 230px;
   margin-left: -20px;
@@ -204,16 +204,16 @@ header ul li a:hover {
   height: 63px;
 }
 /* line 128, ../sass/screen.scss */
-.banner #slide {
+.banner #slider {
   margin: 0 auto;
   width: 1024px;
 }
 /* line 135, ../sass/screen.scss */
-.banner #slide .owl-controls.clickable .owl-pagination {
+.banner #slider .owl-controls.clickable .owl-pagination {
   display: none;
 }
 /* line 139, ../sass/screen.scss */
-.banner #slide .owl-controls.clickable .owl-prev {
+.banner #slider .owl-controls.clickable .owl-prev {
   position: absolute;
   top: 230px;
   margin-left: -20px;
@@ -223,7 +223,7 @@ header ul li a:hover {
   height: 63px;
 }
 /* line 149, ../sass/screen.scss */
-.banner #slide .owl-controls.clickable .owl-next {
+.banner #slider .owl-controls.clickable .owl-next {
   position: absolute;
   right: 0px;
   top: 230px;
