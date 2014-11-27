@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#slide").owlCarousel({
+  $("#slider").owlCarousel({
  
     
       navigation : true, // Show next and prev buttons
