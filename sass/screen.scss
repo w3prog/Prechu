@@ -6,6 +6,8 @@
 @import "compass/reset";
 @import "compass/css3";
 
+$mobile: 'screen and (max-width: 1023px)';
+
 @font-face {
 font-family: 'SegoeWP'; /* имя шрифта для CSS правил */
 src: url(../font/SegoeWP.ttf);
@@ -24,6 +26,12 @@ a{
 .container{
   margin: 0 auto;
   width: 1024px;
+  @media #{$mobile} {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    @include box-sizing(border-box);
+  }
 }
 
 header{
@@ -44,6 +52,9 @@ header{
     height: 60px;
     padding-top: 29px;
     text-align: right;
+    @media #{$mobile} {
+      display: none;
+    }
     li{
       @include inline-block;
       height: 60px;
@@ -58,6 +69,18 @@ header{
           border-bottom: 2px solid #5094f2;
         }
       }
+    }
+  }
+  .mobile-menu {
+    display: none;
+    @media #{$mobile} {
+      display: block;
+      width: 58px;
+      height: 44px;
+      float: right;
+      cursor: pointer;
+      background: url('../img/mobile-menu.png') no-repeat;
+      margin-top: 19px;
     }
   }
 }
@@ -126,8 +149,12 @@ header{
   }
   
   #slider {
+    overflow: hidden;
     margin: 0 auto;
       width: 1024px;
+      @media #{$mobile} {
+        width: 100%;
+      }
     .owl-controls.clickable{
       
       
@@ -175,9 +202,15 @@ header{
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 95px;
+  @media #{$mobile} {
+    padding: 0;
+  }
   ul.advantages {
     margin-left: -25px;
     margin-right: -25px;
+    @media #{$mobile} {
+      margin: 0;
+    }
     li {
       width: 250px;
       @include inline-block;
@@ -186,6 +219,10 @@ header{
       text-align: center;
       font: 14px;
       color: #909090;
+      @media #{$mobile} {
+        margin: 0;
+        width: 100%;
+      }
       img {
         margin-bottom: 30px;
       }
