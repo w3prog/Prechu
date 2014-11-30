@@ -3,7 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../var/lib/gems/1.9.1/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -187,7 +187,13 @@ header .mobile-menu {
   margin-top: 40px;
   float: left;
 }
-/* line 102, ../sass/screen.scss */
+@media screen and (max-width: 1023px) {
+  /* line 96, ../sass/screen.scss */
+  .banner .slide img {
+    margin-left: 30px;
+  }
+}
+/* line 105, ../sass/screen.scss */
 .banner .slide h2 {
   display: block;
   font-size: 42px;
@@ -195,14 +201,28 @@ header .mobile-menu {
   padding-top: 156px;
   padding-bottom: 15px;
 }
-/* line 109, ../sass/screen.scss */
+@media screen and (max-width: 1023px) {
+  /* line 105, ../sass/screen.scss */
+  .banner .slide h2 {
+    margin-left: 400px;
+    font-size: 31px;
+  }
+}
+/* line 117, ../sass/screen.scss */
 .banner .slide p {
   font-size: 26px;
   line-height: 1.049;
   margin-left: 515px;
   padding-bottom: 18px;
 }
-/* line 116, ../sass/screen.scss */
+@media screen and (max-width: 1023px) {
+  /* line 117, ../sass/screen.scss */
+  .banner .slide p {
+    margin-left: 400px;
+    font-size: 23px;
+  }
+}
+/* line 129, ../sass/screen.scss */
 .banner .slide .ok {
   display: block;
   margin-left: 525px;
@@ -215,26 +235,14 @@ header .mobile-menu {
   padding-left: 45px;
   margin-top: 12px;
 }
-/* line 129, ../sass/screen.scss */
-.banner .slide .next {
-  position: absolute;
-  right: 0px;
-  top: 230px;
-  margin-right: -20px;
-  display: block;
-  background: url(../img/arrow-right.png) no-repeat;
-  width: 25px;
-  height: 63px;
-}
-/* line 140, ../sass/screen.scss */
-.banner .slide .down {
-  position: absolute;
-  top: 230px;
-  margin-left: -20px;
-  display: block;
-  background: url(../img/arrow-left.png) no-repeat;
-  width: 25px;
-  height: 63px;
+@media screen and (max-width: 1023px) {
+  /* line 129, ../sass/screen.scss */
+  .banner .slide .ok {
+    margin-left: 400px;
+    font-size: 31px;
+    height: 38px;
+    width: 191px;
+  }
 }
 /* line 151, ../sass/screen.scss */
 .banner #slider {
@@ -256,13 +264,19 @@ header .mobile-menu {
 .banner #slider .owl-controls.clickable .owl-prev {
   position: absolute;
   top: 230px;
-  margin-left: -20px;
+  margin-left: 0px;
   display: block;
   background: url(../img/arrow-left.png) no-repeat;
   width: 25px;
   height: 63px;
 }
-/* line 176, ../sass/screen.scss */
+@media screen and (max-width: 1023px) {
+  /* line 166, ../sass/screen.scss */
+  .banner #slider .owl-controls.clickable .owl-prev {
+    display: none;
+  }
+}
+/* line 180, ../sass/screen.scss */
 .banner #slider .owl-controls.clickable .owl-next {
   position: absolute;
   right: 0px;
@@ -273,7 +287,13 @@ header .mobile-menu {
   width: 25px;
   height: 63px;
 }
-/* line 190, ../sass/screen.scss */
+@media screen and (max-width: 1023px) {
+  /* line 180, ../sass/screen.scss */
+  .banner #slider .owl-controls.clickable .owl-next {
+    display: none;
+  }
+}
+/* line 199, ../sass/screen.scss */
 .banner .line {
   position: absolute;
   bottom: 0px;
@@ -281,8 +301,14 @@ header .mobile-menu {
   height: 8px;
   background: url(../img/Line.png);
 }
+@media screen and (max-width: 1023px) {
+  /* line 199, ../sass/screen.scss */
+  .banner .line {
+    display: none;
+  }
+}
 
-/* line 199, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .content {
   overflow: hidden;
   margin-top: 55px;
@@ -291,23 +317,24 @@ header .mobile-menu {
   margin-bottom: 95px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 199, ../sass/screen.scss */
+  /* line 211, ../sass/screen.scss */
   .content {
     padding: 0;
+    margin-top: 35px;
   }
 }
-/* line 208, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .content ul.advantages {
   margin-left: -25px;
   margin-right: -25px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 208, ../sass/screen.scss */
+  /* line 221, ../sass/screen.scss */
   .content ul.advantages {
     margin: 0;
   }
 }
-/* line 214, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .content ul.advantages li {
   width: 250px;
   display: inline-block;
@@ -322,68 +349,131 @@ header .mobile-menu {
   color: #909090;
 }
 @media screen and (max-width: 1023px) {
-  /* line 214, ../sass/screen.scss */
+  /* line 227, ../sass/screen.scss */
   .content ul.advantages li {
     margin: 0;
     width: 100%;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: justify;
+    padding-top: 20px;
   }
 }
-/* line 226, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .content ul.advantages li img {
   margin-bottom: 30px;
 }
-/* line 229, ../sass/screen.scss */
+@media screen and (max-width: 1023px) {
+  /* line 242, ../sass/screen.scss */
+  .content ul.advantages li img {
+    float: left;
+    margin-left: 47px;
+    margin-right: 30px;
+  }
+}
+/* line 250, ../sass/screen.scss */
 .content ul.advantages li a {
-  margin: 0 auto;
+  margin-top: 20px;
+  text-align: left;
   color: #5094f2;
   font-size: 20px;
   line-height: 30px;
+  padding-right: 80px;
+}
+@media screen and (max-width: 1023px) {
+  /* line 250, ../sass/screen.scss */
+  .content ul.advantages li a {
+    display: block;
+    margin-top: 30p;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  /* line 263, ../sass/screen.scss */
+  .content ul.advantages li p {
+    padding-right: 80px;
+  }
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .basket {
   min-height: 400px;
   color: #6f7173;
 }
-/* line 241, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .basket h2 {
   font-size: 42px;
   padding-left: 55px;
 }
-/* line 245, ../sass/screen.scss */
+@media screen and (max-width: 1023px) {
+  /* line 274, ../sass/screen.scss */
+  .basket h2 {
+    text-align: center;
+    padding-left: 0px;
+  }
+}
+/* line 282, ../sass/screen.scss */
 .basket img {
   float: left;
   margin-left: 50px;
   margin-top: 75px;
 }
-/* line 251, ../sass/screen.scss */
+@media screen and (max-width: 1023px) {
+  /* line 282, ../sass/screen.scss */
+  .basket img {
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
+}
+/* line 296, ../sass/screen.scss */
 .basket .basket-text {
   margin-left: 500px;
 }
-/* line 254, ../sass/screen.scss */
+@media screen and (max-width: 1023px) {
+  /* line 296, ../sass/screen.scss */
+  .basket .basket-text {
+    margin-left: 0px;
+  }
+}
+/* line 302, ../sass/screen.scss */
 .basket .basket-text h3 {
   font-size: 26px;
   padding-bottom: 35px;
 }
-/* line 259, ../sass/screen.scss */
+@media screen and (max-width: 1023px) {
+  /* line 302, ../sass/screen.scss */
+  .basket .basket-text h3 {
+    padding-left: 80px;
+  }
+}
+/* line 310, ../sass/screen.scss */
 .basket .basket-text p {
   font-size: 15px;
   color: #909090;
   padding-bottom: 25px;
 }
+@media screen and (max-width: 1023px) {
+  /* line 310, ../sass/screen.scss */
+  .basket .basket-text p {
+    padding-left: 80px;
+  }
+}
 
-/* line 267, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 .shadow-line {
   width: 100%;
   border-bottom: 1px solid #e5e5e5;
   margin-top: 40px;
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 footer {
   text-align: center;
 }
-/* line 274, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 footer p {
   margin-top: 35px;
   margin-bottom: 45px;
