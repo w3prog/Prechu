@@ -36,8 +36,10 @@ a{
 
 header{
   height: 89px;
-  position: relative;
-  
+  @media #{$mobile} {
+    height: auto;
+    min-height: 100px;
+  }
   .logo {
     display: block;
     width: 120px;
@@ -78,20 +80,51 @@ header{
     display: none;
     @media #{$mobile} {
       display: block;
-      width: 58px;
-      height: 44px;
+      position: absolute;
+      width: 100%;
+      right: 0;
+      left: 0;
+      top: 30px;
+      height: auto;
       float: right;
       cursor: pointer;
-      background: url('../img/mobile-menu.png') no-repeat;
-      margin-top: 19px;
-    }
-    .mobile-items{
-      left: 0;
-      right: 0;
-      text-align: center;
-      margin: 10px 0;
+      background: transparent;
+      z-index: 1;
+      
+      .naver-handle{
+        background: transparent;
+        border: 0px;
+        margin-bottom: 20px;
+      }
+      .naver-handle:after{
+        background: url(../img/mobile-menu.png);
+        width: 58px;
+        height: 44px;
+        box-shadow: none;
+      }
+      
+      .naver.open .naver-handle:after{
+        background: url(../img/mobile-menu.png) !important;
+        width: 58px;
+        height: 44px;
+        box-shadow: none !important;
+        content: "" !important;
+      }
+      
+      a{
+        display: block;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+      }
+      
     }
     
+
 
   }
 }
@@ -260,7 +293,7 @@ header{
       img {
         margin-bottom: 30px;
         @media #{$mobile} {
-          width: 20%;
+          width: 140px;
           float: left;
           margin-left: 10px;
           margin-right: 5px;
