@@ -4,3 +4,5 @@
 .sass-cache/
 scss-lint.log
 bower_components/
+node_modules/
+*~
