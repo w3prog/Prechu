@@ -8,6 +8,21 @@ module.exports = function(grunt) {
         }
       }
     },
+    connect: {
+      test: {
+        options: {
+          port: 3000,
+          base: '.'
+//          ,
+//          onCreateServer: function(server, connect, options) {
+//          var io = require('socket.io').listen(server);
+//          io.sockets.on('connection', function(socket) {
+//            // do something with socket
+//          });
+       // }
+        }
+      }
+    },
     watch: {
       sass: {
         files: 'sass/*.scss',
@@ -17,10 +32,11 @@ module.exports = function(grunt) {
         }
       }
     }
+    
   });
 
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
-  grunt.registerTask('default', ['compass','watch']);
+  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.registerTask('default', ['compass','connect','watch']);
 };

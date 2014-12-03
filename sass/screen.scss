@@ -89,29 +89,17 @@ header{
       cursor: pointer;
       background: transparent;
       z-index: 1;
-      .naver-handle{
-        background: transparent;
-        border: 0px;
-        margin-bottom: 20px;
-      }
-      .naver-handle:after{
-        background: url(../img/mobile-menu.png) !important;
-        width: 58px !important;
-        height: 44px !important;
-        box-shadow: none !important;
-        content: "" !important;
-      }
-      a{
-        display: block;
-        right: 0;
-        left: 0;
-        text-align: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        background: #fff;
-        border: 1px solid #e5e5e5;
-      } 
     }
+    a{
+      display: block;
+      right: 0;
+      left: 0;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+    } 
   }
 }
 
