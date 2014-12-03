@@ -9,8 +9,8 @@
 $mobile: 'screen and (max-width: 1023px)';
 
 @font-face {
-font-family: 'SegoeWP'; /* имя шрифта для CSS правил */
-src: url(../font/SegoeWP.ttf);
+  font-family: 'SegoeWP'; /* имя шрифта для CSS правил */
+  src: url(../font/SegoeWP.ttf);
 }
 
 body {
@@ -51,7 +51,6 @@ header{
     font-size: 42px;
     float: left;
     //todo как маштабировать фон?????
-    
   }
   ul{
     height: 60px;
@@ -90,27 +89,18 @@ header{
       cursor: pointer;
       background: transparent;
       z-index: 1;
-      
       .naver-handle{
         background: transparent;
         border: 0px;
         margin-bottom: 20px;
       }
       .naver-handle:after{
-        background: url(../img/mobile-menu.png);
-        width: 58px;
-        height: 44px;
-        box-shadow: none;
-      }
-      
-      .naver.open .naver-handle:after{
         background: url(../img/mobile-menu.png) !important;
-        width: 58px;
-        height: 44px;
+        width: 58px !important;
+        height: 44px !important;
         box-shadow: none !important;
         content: "" !important;
       }
-      
       a{
         display: block;
         right: 0;
@@ -120,12 +110,8 @@ header{
         padding-bottom: 15px;
         background: #fff;
         border: 1px solid #e5e5e5;
-      }
-      
+      } 
     }
-    
-
-
   }
 }
 
@@ -157,7 +143,6 @@ header{
       margin-left: 515px;
       padding-top: 156px;
       padding-bottom: 15px;
-      
       @media #{$mobile}{
         margin-left: 0px;
         font-size: 22px;
@@ -170,7 +155,6 @@ header{
       line-height: 1.049;
       margin-left: 525px;
       padding-bottom: 18px;
-      
       @media #{$mobile}{
         margin-left: 0px;
         font-size: 18px;
@@ -189,13 +173,11 @@ header{
       padding-top: 10px;
       padding-left: 45px;
       margin-top: 12px;
-      
       @media #{$mobile}{
         margin-left: 60%;
         font-size: 15px;
         height: 38px;
         width: 70px;
-        
       }
     }
   }
@@ -252,8 +234,8 @@ header{
     height: 8px;
     background: url(../img/Line.png);
     @media #{$mobile} {
-        display: none;
-      }
+      display: none;
+    }
   }
 }
 
@@ -297,8 +279,6 @@ header{
           float: left;
           margin-left: 10px;
           margin-right: 5px;
-          
-          
         }
       }
       a{
@@ -318,7 +298,6 @@ header{
       p{
         @media #{$mobile} {
           padding-right: 80px;
-          
         }
       }
     }
@@ -331,41 +310,40 @@ header{
     font-size: 42px;
     padding-left: 55px;
     @media #{$mobile} {
-          text-align: center;
-          padding-left: 0px;
-        }
+      text-align: center;
+      padding-left: 0px;
+    }
   } 
   img{
     float: left;
     margin-left: 50px;
     margin-top: 75px;
     @media #{$mobile} {
-          float: none;
-          display: block;
-          margin: 0 auto;
-          margin-top: 45px;
-          margin-bottom: 30px;
-          margin-bottom: 30px;
-          margin-top: 50px;
-          width: 80%;
-          max-width: auto;
-        }
+      float: none;
+      display: block;
+      margin: 0 auto;
+      margin-top: 45px;
+      margin-bottom: 30px;
+      margin-bottom: 30px;
+      margin-top: 50px;
+      width: 80%;
+      max-width: auto;
+    }
   }
   
   .basket-text{
     margin-left: 500px;
     @media #{$mobile} {
-          margin-left: 0px;
-          padding-left: 20px;
-        }
-    
+        margin-left: 0px;
+        padding-left: 20px;
+      }
     h3{
       font-size: 26px;
       padding-bottom: 35px;
       @media #{$mobile} {
-          text-align: center;
-          font-size: 35px;
-        }
+        text-align: center;
+        font-size: 35px;
+      }
     }
     
     p{
@@ -373,16 +351,16 @@ header{
       color: #909090;
       padding-bottom: 25px;
       @media #{$mobile} {
-          padding-right: 20px;
-          font-size: 18px;
-        }
+        padding-right: 20px;
+        font-size: 18px;
+      }
     }
   }
 }
 
 .shadow-line{
-width: 100%;
-border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
   margin-top: 40px;
 }
 footer{
