@@ -135,9 +135,15 @@ header ul {
   /* line 55, ../sass/screen.scss */
   header ul {
     display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
   }
 }
-/* line 62, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 header ul li {
   display: inline-block;
   vertical-align: middle;
@@ -146,7 +152,19 @@ header ul li {
   *display: inline;
   height: 60px;
 }
-/* line 65, ../sass/screen.scss */
+@media screen and (max-width: 1023px) {
+  /* line 68, ../sass/screen.scss */
+  header ul li {
+    display: block;
+    right: 0;
+    left: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+  }
+}
+/* line 80, ../sass/screen.scss */
 header ul li a {
   display: block;
   padding-left: 5px;
@@ -155,43 +173,38 @@ header ul li a {
   height: 58px;
   line-height: 58px;
 }
-/* line 72, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 header ul li a:hover {
   border-bottom: 2px solid #5094f2;
 }
-/* line 78, ../sass/screen.scss */
-header .mobile-menu {
+@media screen and (max-width: 1023px) {
+  /* line 80, ../sass/screen.scss */
+  header ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+  }
+}
+/* line 102, ../sass/screen.scss */
+header #mobile-menu {
   display: none;
 }
 @media screen and (max-width: 1023px) {
-  /* line 78, ../sass/screen.scss */
-  header .mobile-menu {
+  /* line 102, ../sass/screen.scss */
+  header #mobile-menu {
     display: block;
-    position: absolute;
-    width: 100%;
-    right: 0;
-    left: 0;
-    top: 30px;
-    height: auto;
+    background: url(../img/mobile-menu.png) no-repeat;
+    height: 44px;
+    width: 58px;
     float: right;
-    cursor: pointer;
-    background: transparent;
-    z-index: 1;
+    margin-top: 30px;
+    margin-right: 10px;
   }
 }
-/* line 93, ../sass/screen.scss */
-header .mobile-menu a {
-  display: block;
-  right: 0;
-  left: 0;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background: #fff;
-  border: 1px solid #e5e5e5;
-}
 
-/* line 106, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .banner {
   position: relative;
   background: url(../img/backgroung-banner.png);
@@ -200,30 +213,30 @@ header .mobile-menu a {
   color: white;
 }
 @media screen and (max-width: 1023px) {
-  /* line 106, ../sass/screen.scss */
+  /* line 117, ../sass/screen.scss */
   .banner {
     height: 250px;
   }
 }
-/* line 115, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .banner .slide {
   position: relative;
 }
-/* line 117, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .banner .slide img {
   margin-left: 60px;
   margin-top: 40px;
   float: left;
 }
 @media screen and (max-width: 1023px) {
-  /* line 117, ../sass/screen.scss */
+  /* line 128, ../sass/screen.scss */
   .banner .slide img {
     margin-left: 30px;
     margin-top: 10px;
     width: 150px;
   }
 }
-/* line 128, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .banner .slide h2 {
   display: block;
   font-size: 42px;
@@ -232,7 +245,7 @@ header .mobile-menu a {
   padding-bottom: 15px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 128, ../sass/screen.scss */
+  /* line 139, ../sass/screen.scss */
   .banner .slide h2 {
     margin-left: 0px;
     font-size: 22px;
@@ -240,7 +253,7 @@ header .mobile-menu a {
     padding-top: 16px;
   }
 }
-/* line 141, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .banner .slide p {
   font-size: 26px;
   line-height: 1.049;
@@ -248,14 +261,14 @@ header .mobile-menu a {
   padding-bottom: 18px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 141, ../sass/screen.scss */
+  /* line 152, ../sass/screen.scss */
   .banner .slide p {
     margin-left: 0px;
     font-size: 18px;
     line-height: 0.8;
   }
 }
-/* line 153, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .banner .slide .ok {
   display: block;
   margin-left: 525px;
@@ -269,7 +282,7 @@ header .mobile-menu a {
   margin-top: 12px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 153, ../sass/screen.scss */
+  /* line 164, ../sass/screen.scss */
   .banner .slide .ok {
     margin-left: 60%;
     font-size: 15px;
@@ -277,27 +290,27 @@ header .mobile-menu a {
     width: 70px;
   }
 }
-/* line 173, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .banner #slider {
   overflow: hidden;
   margin: 0 auto;
   width: 1024px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 173, ../sass/screen.scss */
+  /* line 184, ../sass/screen.scss */
   .banner #slider {
     width: 100%;
   }
 }
-/* line 180, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .banner #slider .owl-controls {
   display: none !important;
 }
-/* line 185, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .banner #slider .owl-controls.clickable .owl-pagination {
   display: none;
 }
-/* line 189, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .banner #slider .owl-controls.clickable .owl-prev {
   position: absolute;
   top: 230px;
@@ -308,12 +321,12 @@ header .mobile-menu a {
   height: 63px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 189, ../sass/screen.scss */
+  /* line 200, ../sass/screen.scss */
   .banner #slider .owl-controls.clickable .owl-prev {
     display: none;
   }
 }
-/* line 202, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .banner #slider .owl-controls.clickable .owl-next {
   position: absolute;
   right: 0px;
@@ -325,12 +338,12 @@ header .mobile-menu a {
   height: 63px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 202, ../sass/screen.scss */
+  /* line 213, ../sass/screen.scss */
   .banner #slider .owl-controls.clickable .owl-next {
     display: none;
   }
 }
-/* line 218, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .banner .line {
   position: absolute;
   bottom: 0px;
@@ -339,13 +352,13 @@ header .mobile-menu a {
   background: url(../img/Line.png);
 }
 @media screen and (max-width: 1023px) {
-  /* line 218, ../sass/screen.scss */
+  /* line 229, ../sass/screen.scss */
   .banner .line {
     display: none;
   }
 }
 
-/* line 230, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .content {
   overflow: hidden;
   margin-top: 55px;
@@ -354,24 +367,24 @@ header .mobile-menu a {
   margin-bottom: 95px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 230, ../sass/screen.scss */
+  /* line 241, ../sass/screen.scss */
   .content {
     padding: 0;
     margin-top: 5px;
   }
 }
-/* line 240, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .content ul.advantages {
   margin-left: -25px;
   margin-right: -25px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 240, ../sass/screen.scss */
+  /* line 251, ../sass/screen.scss */
   .content ul.advantages {
     margin: 0;
   }
 }
-/* line 246, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .content ul.advantages li {
   width: 250px;
   display: inline-block;
@@ -386,7 +399,7 @@ header .mobile-menu a {
   color: #909090;
 }
 @media screen and (max-width: 1023px) {
-  /* line 246, ../sass/screen.scss */
+  /* line 257, ../sass/screen.scss */
   .content ul.advantages li {
     margin: 0;
     width: 100%;
@@ -397,12 +410,12 @@ header .mobile-menu a {
     margin-right: 0px;
   }
 }
-/* line 263, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .content ul.advantages li img {
   margin-bottom: 30px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 263, ../sass/screen.scss */
+  /* line 274, ../sass/screen.scss */
   .content ul.advantages li img {
     width: 140px;
     float: left;
@@ -410,7 +423,7 @@ header .mobile-menu a {
     margin-right: 5px;
   }
 }
-/* line 272, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .content ul.advantages li a {
   margin-top: 20px;
   text-align: left;
@@ -420,7 +433,7 @@ header .mobile-menu a {
   padding-right: 80px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 272, ../sass/screen.scss */
+  /* line 283, ../sass/screen.scss */
   .content ul.advantages li a {
     display: block;
     margin-top: 0px;
@@ -429,37 +442,37 @@ header .mobile-menu a {
   }
 }
 @media screen and (max-width: 1023px) {
-  /* line 286, ../sass/screen.scss */
+  /* line 297, ../sass/screen.scss */
   .content ul.advantages li p {
     padding-right: 80px;
   }
 }
 
-/* line 294, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .basket {
   min-height: 400px;
   color: #6f7173;
 }
-/* line 297, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .basket h2 {
   font-size: 42px;
   padding-left: 55px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 297, ../sass/screen.scss */
+  /* line 308, ../sass/screen.scss */
   .basket h2 {
     text-align: center;
     padding-left: 0px;
   }
 }
-/* line 305, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .basket img {
   float: left;
   margin-left: 50px;
   margin-top: 75px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 305, ../sass/screen.scss */
+  /* line 316, ../sass/screen.scss */
   .basket img {
     float: none;
     display: block;
@@ -472,55 +485,55 @@ header .mobile-menu a {
     max-width: auto;
   }
 }
-/* line 322, ../sass/screen.scss */
+/* line 333, ../sass/screen.scss */
 .basket .basket-text {
   margin-left: 500px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 322, ../sass/screen.scss */
+  /* line 333, ../sass/screen.scss */
   .basket .basket-text {
     margin-left: 0px;
     padding-left: 20px;
   }
 }
-/* line 328, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .basket .basket-text h3 {
   font-size: 26px;
   padding-bottom: 35px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 328, ../sass/screen.scss */
+  /* line 339, ../sass/screen.scss */
   .basket .basket-text h3 {
     text-align: center;
     font-size: 35px;
   }
 }
-/* line 337, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .basket .basket-text p {
   font-size: 15px;
   color: #909090;
   padding-bottom: 25px;
 }
 @media screen and (max-width: 1023px) {
-  /* line 337, ../sass/screen.scss */
+  /* line 348, ../sass/screen.scss */
   .basket .basket-text p {
     padding-right: 20px;
     font-size: 18px;
   }
 }
 
-/* line 349, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 .shadow-line {
   width: 100%;
   border-bottom: 1px solid #e5e5e5;
   margin-top: 40px;
 }
 
-/* line 354, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 footer {
   text-align: center;
 }
-/* line 356, ../sass/screen.scss */
+/* line 367, ../sass/screen.scss */
 footer p {
   margin-top: 35px;
   margin-bottom: 45px;

@@ -19,7 +19,9 @@ $(document).ready(function() {
 //      itemsMobile : [479,1]
  
   });
- jQuery('header nav').naver({
-  label:false,
- });
+ $("#mobile-menu").click(
+  function(){
+    $("#header-menu").toggle();
+  }
+ );
 });
