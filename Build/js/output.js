@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#slider").owlCarousel({navigation:!0,slideSpeed:300,paginationSpeed:400,singleItem:!0,navigationText:["",""]}),$("#mobile-menu").click(function(){$("#header-menu").toggle()})});
