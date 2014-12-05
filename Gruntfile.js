@@ -35,7 +35,7 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-            'build/css/output.css': ['stylesheets/screen.css']
+            'build/output.css': ['stylesheets/screen.css']
         }
       }
     },
@@ -48,15 +48,16 @@ module.exports = function(grunt) {
     },
     concat: {
       options: {
-        separator: ';'
+        separator: '\n',
+        preserveComments: false
       },
       distJs: {
-        src: ['build/js/output.js', 'bower_components/jquery/dist/jquery.min.js', 'bower_components/owl-carousel/owl.carouse.min.js'],
+        src: ['bower_components/jquery/dist/jquery.min.js', 'bower_components/owl-carousel/owl-carousel/owl.carousel.min.js', 'build/js/output.js'],
         dest: 'build/js/build.js'
       },
       distCss: {
-        src: ['build/css/output.css', 'bower_components/owl-carousel/owl.carousel.min.css'],
-        dest: 'build/css/build.css'
+        src: ['build/output.css', 'bower_components/owl-carousel/owl-carousel/owl.carousel.css'],
+        dest: 'build/build.css'
       }
     }
     
