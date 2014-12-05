@@ -35,25 +35,30 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-            'Build/css/output.css': ['stylesheets/screen.css']
+            'build/output.css': ['stylesheets/screen.css']
         }
       }
     },
     uglify: {
     my_target: {
       files: {
-        'Build/js/output.js': ['js/script.js']
+        'build/js/output.js': ['js/script.js']
         }
       }
     },
     concat: {
       options: {
-        separator: ';',
+        separator: '\n',
+        preserveComments: false
       },
-      dist: {
-        src: ['Build/js/output.js', 'bower_components/jquery/dist/jquery.min.js'],
-        dest: 'Build/js/built.js',
+      distJs: {
+        src: ['bower_components/jquery/dist/jquery.min.js', 'bower_components/owl-carousel/owl-carousel/owl.carousel.min.js', 'build/js/output.js'],
+        dest: 'build/js/build.js'
       },
+      distCss: {
+        src: ['build/output.css', 'bower_components/owl-carousel/owl-carousel/owl.carousel.css'],
+        dest: 'build/build.css'
+      }
     }
     
   });
